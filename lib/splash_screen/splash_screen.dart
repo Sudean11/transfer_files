@@ -1,3 +1,4 @@
+import 'package:designs/home_page/home_page.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -5,6 +6,10 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Future.delayed(const Duration(milliseconds: 3000), () {
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => HomePage()));
+    });
     return Container(
       color: Colors.white,
       child: (Column(
