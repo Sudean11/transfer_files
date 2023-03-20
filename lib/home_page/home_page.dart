@@ -1,5 +1,6 @@
 import 'package:designs/home_page/header.dart';
 import 'package:designs/home_page/search_bar.dart';
+import 'package:designs/home_page/timeline_history.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -20,6 +21,7 @@ class HomePage extends StatelessWidget {
               HomeHeader(),
               SearchBar(),
               DropFiles(),
+              TimelineHistory()
             ]),
           )),
         ),
